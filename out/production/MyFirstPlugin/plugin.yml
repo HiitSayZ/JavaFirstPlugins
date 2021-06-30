@@ -1,0 +1,12 @@
+  name: MyFirstPlugin
+  main: me.hiitsayz.myfirstplugin.MyFirstPlugin
+  version: 0.1.1
+  author: HiitSayZ
+  description: My first plugin for a test minecraft server
+  commands:
+    hello:
+      aliases: [hi]
+      description: This is the hello command.
+    gui:
+      aliases: [inv]
+      description: This opens the lobby GUI.

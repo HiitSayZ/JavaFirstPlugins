@@ -1,0 +1,7 @@
+firstJoin_message: '&e<player> has joined the server for the first time!'
+join_message: '&e<player> has joined.'
+killerKillMessage: '&cYou have killed <player>.'
+playerDeathMessage: '&cYou have been killed by <player>.'
+helloMessage: '&eHello <player>!'
+noPermission: '&cYou do not have permission to execute this command.'
+consoleError: 'Only players may execute this command.'
