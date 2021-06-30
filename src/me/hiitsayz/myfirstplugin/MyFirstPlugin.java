@@ -11,18 +11,36 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class MyFirstPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
+        //when plugin is enabled
         getLogger().info("First plugin has been enabled.");
         saveDefaultConfig();
-        new HelloCommand(this);
-        new inventoryCommand(this);
+
+        registerManager();
+        registerListeners();
+        registerCommands();
+    }
+
+    @Override
+    public void onDisable() {
+        //when plugin is disabled
+        getLogger().info("First plugin has been disabled.");
+    }
+
+    public void registerManager() {
+        //register managers
+    }
+    public void registerListeners() {
+        //register listeners
+
         new joinListener(this);
         new playerDeathListener(this);
         new inventoryClickedListener(this);
         lobbyGUI.initialize();
     }
+    public void registerCommands() {
+        //register commands
 
-    @Override
-    public void onDisable() {
-        getLogger().info("First plugin has been disabled.");
+        new HelloCommand(this);
+        new inventoryCommand(this);
     }
 }
